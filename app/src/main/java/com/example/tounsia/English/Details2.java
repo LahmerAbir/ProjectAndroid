@@ -22,21 +22,12 @@ public class Details2 extends AppCompatActivity {
 
         storyContent = findViewById(R.id.contentOfRights);
         Intent i = getIntent();
-        String title = i.getStringExtra("titleOfViolence");
+        String title = i.getStringExtra("titleOfRights");
         String content = i.getStringExtra("contentOfRights");
        // getSupportActionBar().setTitle(title);
        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // set the appbar title as Story title
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
         // set content of the story to textview
         storyContent.setText(content);
         storyContent.setMovementMethod(new ScrollingMovementMethod());

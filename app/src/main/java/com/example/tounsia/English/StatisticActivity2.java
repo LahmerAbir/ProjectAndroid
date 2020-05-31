@@ -26,24 +26,11 @@ public class StatisticActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_statistic2);
 
 
-        toolbar = findViewById(R.id.main_toolbar);
-        setSupportActionBar(toolbar);
 
 
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.main_toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
         PieChart pieChart = findViewById(R.id.pie);
         float[] calls = {6500, 585, 5655 , 5655 ,585 };
-        String[] violTypes = {"عنف نفسي / معنوي", "عنف جنس", "عنف لفظي","عنف اقتصادي","عنف ضد الأطفال"};
+        String[] violTypes = {"Psychological violence / Moral", "Sexual violence", "Verbal violence","Economic violence","Violence against children"};
         float totalCalls = 6500;
         ArrayList<PieEntry> pieEntries = new ArrayList<>();
         for(int i = 0;i<violTypes.length;i++) {
