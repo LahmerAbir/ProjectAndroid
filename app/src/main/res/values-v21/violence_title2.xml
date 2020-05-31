@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stories_title2">
+        <item>Definition of violence against women</item>
+        <item>Physical violence</item>
+        <item>Psychological violence</item>
+        <item>Sexual violence</item>
+        <item>Economic violence</item>
+
+
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="rights_title">
+        <item>الإحاطة بالمرأة</item>
+        <item>القضاء على جميع أشكال العنف</item>
+        <item>التمييزية ضد المرأة</item>
+        <item>وقاية المرأة من العنف</item>
+
+
+
+
+    </string-array>
+</resources>

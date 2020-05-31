@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">تونسية</string>
+    <string name="acceuil" />
+    <string name="personal_data">Personal Data</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

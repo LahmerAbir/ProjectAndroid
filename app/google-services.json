@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "949614604993",
+    "firebase_url": "https://tounsiaapp.firebaseio.com",
+    "project_id": "tounsiaapp",
+    "storage_bucket": "tounsiaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949614604993:android:bf87fc77cfd4649844da40",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949614604993-4c7m0f7lj9m1k62ok6sj4r3rpjgphr2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "714f00d546547c450e6355b84223a0cc3776ef65"
+          }
+        },
+        {
+          "client_id": "949614604993-36v5hq3meuj1irbrgg2vbjdcrq2gsuuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC00iKgglxXnszIZiUY_DrSG-bvQqAwIpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949614604993-36v5hq3meuj1irbrgg2vbjdcrq2gsuuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949614604993:android:da94093ceda3687d44da40",
+        "android_client_info": {
+          "package_name": "com.example.tounsia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949614604993-d0fgpp0lhc8fhs9rp33ts0kei1en9s4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tounsia",
+            "certificate_hash": "9d120f819842c6cae21686d02f48ca5b19cf4ea5"
+          }
+        },
+        {
+          "client_id": "949614604993-ab0f177kei0ima6sjhrju0vpv0e4epke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tounsia",
+            "certificate_hash": "714f00d546547c450e6355b84223a0cc3776ef65"
+          }
+        },
+        {
+          "client_id": "949614604993-36v5hq3meuj1irbrgg2vbjdcrq2gsuuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC00iKgglxXnszIZiUY_DrSG-bvQqAwIpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949614604993-36v5hq3meuj1irbrgg2vbjdcrq2gsuuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Demande"
+    android:id="@+id/relativeLayout4">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#DC8585"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/colorPrimary"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="174dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="41dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/strength"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="56dp"
+            android:text="إشكي بيه!!"
+            android:textColor="#0C0B0B"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        tools:layout_conversion_absoluteHeight="622dp"
+        tools:layout_conversion_absoluteWidth="371dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="شنوا نوع العنف اللي صار عليك ؟؟"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="359dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/viol1"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/black"
+                        android:text="عنف جسدي"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+
+                        />
+
+
+                    <CheckBox
+                        android:id="@+id/viol2"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:buttonTint="@android:color/black"
+                        android:shadowColor="@android:color/black"
+                        android:text="عنف لفضي"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="359dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/viol4"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/black"
+                        android:text="سرقة"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/viol3"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:buttonTint="@android:color/black"
+                        android:text="عنف جنسي"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/viol5"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/border"
+                    android:drawablePadding="10dp"
+                    android:hint="عنف أخر"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#606060"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="20dp"
+                    android:text=" شكون إعتدى عليك؟؟"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/PersoGp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/persone1"
+                                android:layout_width="118dp"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@android:color/black"
+                                android:text="راجلي"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/persone2"
+                                android:layout_width="118dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:buttonTint="@android:color/black"
+                                android:text="طليقي"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/PersoGp"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/persone3"
+                                android:layout_width="118dp"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@android:color/black"
+
+                                android:text="غريب"
+                                android:textColor="@android:color/black"
+
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/persone5"
+                                android:layout_width="118dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:buttonTint="@android:color/black"
+                                android:text=" من العايلة "
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/perso6"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/border"
+                    android:drawablePadding="10dp"
+                    android:hint="شخص أخر"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#606060"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="عندك دليل ؟؟"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="تصويره , فيديو , شهادة طبية ، تسجيل صوت ..."
+                    android:textColor="#FF707072"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="359dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/No"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/black"
+                        android:text="ما عنديش"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/Oui"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:buttonTint="@android:color/black"
+                        android:text=" عندي"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/VisLayout"
+                    android:layout_width="359dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bgbtn"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/importe"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/background"
+                        android:text="حط الدليل"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="أحكيلنا إلي صار"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/Histo"
+                    android:layout_width="310dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgbtn"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:maxLines="10"
+                    android:padding="20dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:id="@+id/demande"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:background="#1132E8"
+                    android:text="إشكي"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

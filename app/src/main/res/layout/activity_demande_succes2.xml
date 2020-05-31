@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8BABA"
+    tools:context=".DemandeSucces">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/Textvalid"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/retour"
+                android:layout_width="137dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:background="#DC8585"
+                android:text="OK"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                />
+            </LinearLayout>
+
+</RelativeLayout>
