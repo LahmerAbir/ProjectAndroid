@@ -1,18 +1,22 @@
 package com.example.tounsia.Forum.View_Controller;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.tounsia.Call;
 import com.example.tounsia.Forum.BlogPost;
 import com.example.tounsia.Forum.BlogRecyclerAdapter;
+import com.example.tounsia.HomeActivity;
 import com.example.tounsia.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentChange;
@@ -35,6 +39,7 @@ public class HomeFragment extends Fragment {
     private FirebaseAuth firebaseAuth;
     private DocumentSnapshot lastVisible;
     private Boolean isFirstPageFirstLoad= true;
+    ImageView back;
 
 
     public HomeFragment() {
@@ -47,7 +52,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
         blog_list = new ArrayList<>();
         blogListView = view.findViewById(R.id.blog_list_view);
 
@@ -56,6 +60,7 @@ public class HomeFragment extends Fragment {
         blogRecyclerAdapter = new BlogRecyclerAdapter(blog_list);
         blogListView.setLayoutManager(new LinearLayoutManager(getActivity()));
         blogListView.setAdapter(blogRecyclerAdapter);
+
 
         if(firebaseAuth.getCurrentUser() != null) {
 

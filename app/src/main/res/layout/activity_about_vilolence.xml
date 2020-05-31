@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
 
         android:layout_height="0dp"
-        android:background="#F9FADCDC"
+        android:background="#F9FAAAAA"
         app:layout_constraintBottom_toTopOf="@+id/storiesListsView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -45,7 +45,7 @@
             android:text="حجات لازم تعرفهم"
             android:textColor="@android:color/black"
             android:textColorLink="@android:color/darker_gray"
-            android:textSize="18dp"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.611"
@@ -57,9 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="60dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif-medium"
             android:text="شنوا لعنف ؟
 "
@@ -74,7 +73,7 @@
             android:id="@+id/appCompatImageView"
             android:layout_width="110dp"
             android:layout_height="142dp"
-            android:layout_marginStart="70dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="20dp"
@@ -89,10 +88,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/storiesListsView"
         android:layout_width="0dp"
-        android:layout_height="541dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/testytyty"
         android:backgroundTint="#F3EFEF"
         android:backgroundTintMode="multiply"
+        android:textAlignment="viewEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />

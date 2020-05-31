@@ -8,16 +8,6 @@
     tools:context=".Forum.View_Controller.ForumActivity">
 
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="20dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back2" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/mainBottomNav"
         android:layout_width="0dp"
