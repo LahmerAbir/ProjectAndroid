@@ -60,9 +60,6 @@ public class SetupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setup);
 
-        Toolbar setupToolbar = findViewById(R.id.setupToolbar);
-        setSupportActionBar(setupToolbar);
-        getSupportActionBar().setTitle("Account Settings");
 
         firebaseAuth = FirebaseAuth.getInstance();
         storageReference = FirebaseStorage.getInstance().getReference();
